@@ -66,10 +66,10 @@ function Request(){
                <span id='pending-approval-heading'>Approved Loans</span>
                <hr className='hr-request-page'/>
                <div id='approved-loan'>
-                      {/* <Approved/>
                       <Approved/>
                       <Approved/>
-                      <Approved/> */}
+                      <Approved/>
+                      <Approved/>
 
                </div>
           </div>
