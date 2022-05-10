@@ -1,0 +1,54 @@
+
+
+#brandName {
+    text-decoration: none;
+    color:black;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    top: 20px;
+    left: 15%;
+    cursor: pointer;
+    font-family: "Modern No. 20";
+}
+
+
+.navListItems {
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.navListItems-inner {
+    width: 120px;
+    font-size: 18px;
+}
+
+.navbar-toggler{
+    display: none;
+}
+.navListItems-inner{
+     text-decoration: none;
+     color: black;
+     font-family: "Modern No. 20";
+}
+
+.navListItems-inner:hover{
+    color: #5B5757;
+}
+
+#nav-bar-ul{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    height: fit-content;
+    text-align: left;
+    position: relative;
+    left:50%;
+    width: fit-content;
+}
+
+#account-button{
+    display: inline-flex;
+    text-align:center;
+    vertical-align:super;
+}

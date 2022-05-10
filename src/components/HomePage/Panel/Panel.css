@@ -1,0 +1,71 @@
+
+
+#loan-panel-div-inner {
+    display: inline-block;
+    background-color: whitesmoke;
+    height: fit-content;
+    border-radius: 6%;
+    border: 1px solid #4A4A4B;
+    padding: 4%;
+}
+
+#loan-panel-inner-inner-div {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+}
+
+#user-info {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    text-align: center;
+}
+
+#cibil-score {
+    display: inline-block;
+    border-radius: 100%;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#max-loan-div {
+    display: flex;
+    flex-direction: column;
+}
+
+#create-loan-post {
+    width: 60%;
+}
+
+.vertical-line {
+    width: 1px;
+    background-color: black;
+    margin-right: 5%;
+}
+
+#input-button{
+  border-radius: 25px;
+  height: 25px;
+  width: 70%;
+}
+
+#loan-request-submit-button{
+    border-radius: 20px;
+    padding:3%;
+    width: 35%;
+    position: relative;
+    left: 50%;
+    top: 5%;
+    cursor: pointer;
+}
+#loan-request-submit-button:hover{
+    background-color: #CABBBB;
+}
+
+#request-loan-input-fields{
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+
+}

@@ -18,8 +18,10 @@ function Profile(){
 
 
    function handleChange(event){
+      console.log("change monthly slip");
        setData(event.target.files[0]);
         console.log(event.target.files[0]);
+        console.log("monthly slip Changed");
    }
 
    function handleTextChange(event){
@@ -32,9 +34,9 @@ function Profile(){
    }
 
    async function handleSubmit(e){
-      e.preventDefault();
-       const fd = new FormData();
-       fd.append('file',selectedFile);
+         e.preventDefault();
+         const fd = new FormData();
+         fd.append('file',selectedFile); 
         await axios.post("http://localhost:4000/upload",fd)
         .then(res=>console.log(res))
         .catch(err=>console.log(err));
@@ -106,6 +108,7 @@ function Profile(){
                      <div key={index} id='monthly-slip'>
                   <div id='upload-box'>
                     <div className='upload_file_right'>
+                        <label for="selectedFile" style={{display:"none"}} onClick={handleChange}></label>
                         <input id='selectedFile' name='monthlyslip' type="file" accept='image/*' value={singleList.monthlyslip} onChange={(e) => {handleSlipChange(e,index);handleChange()}}></input> 
                     </div>
                     <div id='upload-box_2'>
